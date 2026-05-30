@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Request deletion of your BarterHub account and personal data."
+  >
+  <title>BarterHub Account Deletion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">BarterHub Support</p>
+      <h1>Account Deletion Request</h1>
+      <p class="lead">
+        You can request deletion of your BarterHub account and personal data
+        from inside the BarterHub app or by contacting our support team.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Delete Your Account In The App</h2>
+      <ol class="steps">
+        <li>Open the BarterHub app.</li>
+        <li>Sign in to the account you want to delete.</li>
+        <li>Go to Profile, then open Settings.</li>
+        <li>Open Security.</li>
+        <li>Tap Request Account Deletion.</li>
+        <li>Confirm your request.</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>Request By Email</h2>
+      <p>
+        If you cannot access the app, send an email from the same email address
+        used for your BarterHub account.
+      </p>
+
+      <form id="deleteForm" class="form">
+        <label for="email">Account email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="your@email.com"
+          autocomplete="email"
+          required
+        >
+
+        <label for="username">Username or display name</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="Optional"
+          autocomplete="name"
+        >
+
+        <label for="reason">Message</label>
+        <textarea
+          id="reason"
+          name="reason"
+          rows="5"
+        >Please delete my BarterHub account and personal data.</textarea>
+
+        <button type="submit">Create Email Request</button>
+      </form>
+
+      <p id="formStatus" class="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Data We Delete</h2>
+      <ul>
+        <li>Account profile details such as name, username, and bio.</li>
+        <li>Public profile information.</li>
+        <li>Profile photo and uploaded ID verification files, when available.</li>
+        <li>Device notification tokens.</li>
+        <li>Private wallet and premium status fields.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Data We May Retain</h2>
+      <p>
+        Some records may be retained when needed for fraud prevention, payment
+        disputes, safety, legal obligations, or transaction history. These may
+        include purchase records, coin transactions, reports, trade history,
+        and messages connected to other users.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Processing Time</h2>
+      <p>
+        Account deletion requests are reviewed and processed within 30 days.
+        We may contact you if we need to verify ownership of the account.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Support email:
+        <a id="supportEmail" href="mailto:barterhub.help@gmail.com">
+          barterhub.help@gmail.com
+        </a>
+      </p>
+      <p>Last updated: May 30, 2026</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
